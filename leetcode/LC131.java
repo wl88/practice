@@ -1,6 +1,12 @@
-public class Solution {
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class LC131 {
     private boolean[][] isPalindrome;
-    List<List<String>> results = new ArrayList<List<String>>();
+    List<List<String>> results = new ArrayList<>();
     
     public List<List<String>> partition(String s) {
         isPalindrome = new boolean[s.length()+1][s.length()+1];

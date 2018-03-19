@@ -1,4 +1,10 @@
-public class Solution {
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class LC15 {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> results = new ArrayList<List<Integer>>();
         

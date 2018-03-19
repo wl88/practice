@@ -1,6 +1,11 @@
-public class Solution {
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LC77_1 {
     public List<List<Integer>> combine(int n, int k) {
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        List<List<Integer>> result = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i< k; i++) {
             sb.append(1);

@@ -1,4 +1,8 @@
-public class Solution {
+package leetcode;
+
+import java.util.Arrays;
+
+public class LC424_2 {
     public int characterReplacement(String s, int k) {
         int[] char_count = new int[26];
         Arrays.fill(char_count, 0);

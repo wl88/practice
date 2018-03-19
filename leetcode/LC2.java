@@ -1,14 +1,18 @@
-public class Solution {
+package leetcode;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class LC2 {
     public int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) return 0;
-        HashMap<Character, Integer> indices = new HashMap<Character, Integer>();
+        Map<Character, Integer> indices = new HashMap<>();
         int[] results = new int[s.length()];
         results[0] = 1;
         int max = results[0];
         indices.put(s.charAt(0), 0);
         
         for (int i = 1; i<s.length(); i++) {
-            int result = 0;
             char c = s.charAt(i);
             if (!indices.containsKey(c)) {
                 results[i] = results[i-1] + 1;

@@ -1,14 +1,21 @@
-public class Solution {
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class LC336 {
     public List<List<Integer>> palindromePairs(String[] words) {
         if (words.length == 0) return null;
         
-        HashMap<String, Integer> reverseDic = new HashMap<String, Integer>();
+        Map<String, Integer> reverseDic = new HashMap<>();
         for (int i = 0; i<words.length; i++) {
             String reversedW = new StringBuilder(words[i]).reverse().toString();
             if (!reverseDic.containsKey(reversedW)) reverseDic.put(reversedW, i);
         }
         
-        List<List<Integer>> results = new ArrayList<List<Integer>>();
+        List<List<Integer>> results = new ArrayList<>();
         for (int i = 0; i<words.length; i++) {
             String word = words[i];
             //System.out.println("\nword: " + word + " i: " + i);

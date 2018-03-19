@@ -1,9 +1,14 @@
-public class Solution {
+package leetcode;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class LC440 {
     public int findKthNumber(int n, int k) {
         //System.out.println("\n");
         int max_index = Integer.toString(n).length();
         
-        HashMap<Integer, Integer> count_library = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> count_library = new HashMap<>();
         count_library.put(0,1);
         for (int i = 1; i< max_index; i++) {
             count_library.put(i, 1 + 10 * count_library.get(i-1));

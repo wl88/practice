@@ -1,4 +1,11 @@
-public class Solution {
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+public class LC399 {
      class Node {
         String label;
         double value;
@@ -22,7 +29,7 @@ public class Solution {
         
     public double[] calcEquation(String[][] equations, double[] values, String[][] queries) {
         
-        HashMap<String, ArrayList<Node>> graph = new HashMap<String, ArrayList<Node>>();
+        Map<String, ArrayList<Node>> graph = new HashMap<>();
         HashSet<String> library = new HashSet<String>();
         
         for (int i = 0; i < equations.length; i++) {
@@ -71,7 +78,7 @@ public class Solution {
         return results;
     }
     
-    public Result dfs(double result, String target, String current, HashMap<String, ArrayList<Node>> graph) {
+    public Result dfs(double result, String target, String current, Map<String, ArrayList<Node>> graph) {
         if (target.equals(current)) {
             return new Result(true, result);
         }

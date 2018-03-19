@@ -1,9 +1,14 @@
-public class Solution {
-    public static List<List<Integer>> results = new ArrayList<List<Integer>>(); 
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LC77_2 {
+    public static List<List<Integer>> results = new ArrayList<>(); 
     
     public List<List<Integer>> combine(int n, int k) {
         results.clear(); 
-        ArrayList<Integer> result = new ArrayList<Integer>();
+        ArrayList<Integer> result = new ArrayList<>();
         dfs(result, n, k, 0, 1);
         
         return results;

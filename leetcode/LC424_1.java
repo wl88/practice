@@ -1,4 +1,6 @@
-public class Solution {
+package leetcode;
+
+public class LC424_1 {
     public int characterReplacement(String s, int k) {
         int result = Math.min(s.length(), k+1);
         

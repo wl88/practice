@@ -1,11 +1,17 @@
-public class MedianFinder {
+package leetcode;
+
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class LC295 {
     private Queue<Integer> min;
     private Queue<Integer> max;
     private int minSize = 0;
     private int maxSize = 0;
     
     /** initialize your data structure here. */
-    public MedianFinder() {
+    public LC295() {
         min = new PriorityQueue<Integer>(10, new Comparator<Integer>() {
                 public int compare(Integer a, Integer b) {
                     return b-a;

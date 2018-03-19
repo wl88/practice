@@ -1,4 +1,6 @@
-public class Solution {
+package leetcode;
+
+public class LC55 {
     public boolean canJump(int[] nums) {
         int maxReach = nums[0];
         int current = 0;

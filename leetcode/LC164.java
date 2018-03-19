@@ -1,9 +1,13 @@
-public class Solution {
+package leetcode;
+
+import java.util.*;
+
+public class LC164 {
     public int maximumGap(int[] nums) {
         if (nums.length < 2) return 0; 
         int max = 0;
         int min = Integer.MAX_VALUE;
-        HashSet<Integer> distinct_nums= new HashSet<Integer>();
+        Set<Integer> distinct_nums= new HashSet<>();
         
         for (int i = 0; i< nums.length; i++) {
             if (nums[i] <min) min = nums[i];

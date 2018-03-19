@@ -1,4 +1,6 @@
-class Solution {
+package leetcode;
+
+public class LC5 {
     public String longestPalindrome(String s) {
         if (s == null) return null;
         if (s.length() == 0) return null;

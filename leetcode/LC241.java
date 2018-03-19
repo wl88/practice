@@ -1,6 +1,11 @@
-public class Solution {
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LC241 {
     public List<Integer> diffWaysToCompute(String input) {
-        List<Integer> result = new ArrayList<Integer>();
+        List<Integer> result = new ArrayList<>();
         
         for (int i = 0; i< input.length(); i++) {
             if (input.charAt(i) == '-' || input.charAt(i) == '+' || input.charAt(i) == '*') {

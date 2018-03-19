@@ -1,4 +1,8 @@
-public class Solution {
+package leetcode;
+
+import java.util.Arrays;
+
+public class LC204 {
     public int countPrimes(int n) {
         boolean[] isPrime = new boolean[n];
         Arrays.fill(isPrime, true);

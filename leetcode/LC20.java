@@ -1,6 +1,10 @@
-public class Solution {
+package leetcode;
+
+import java.util.Stack;
+
+public class LC20 {
     public boolean isValid(String s) {
-        Stack st = new Stack();
+        Stack<Character> st = new Stack<>();
         
         for (int i = 0; i< s.length(); i++) {
             char c = s.charAt(i);

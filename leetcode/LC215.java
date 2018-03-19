@@ -1,7 +1,13 @@
-public class Solution {
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class LC215 {
     public int findKthLargest(int[] nums, int k) {
         //System.out.println("\n");
-        ArrayList<Integer> current_list = new ArrayList<Integer>();
+        List<Integer> current_list = new ArrayList<>();
         for (int i = 0; i< nums.length; i++) {
             current_list.add(nums[i]);
         }

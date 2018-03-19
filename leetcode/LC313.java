@@ -1,4 +1,8 @@
-public class Solution {
+package leetcode;
+
+import java.util.Arrays;
+
+public class LC313 {
     public int nthSuperUglyNumber(int n, int[] primes) {
         int[] ugly = new int[n];
         ugly[0] = 1;

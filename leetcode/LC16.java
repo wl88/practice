@@ -1,4 +1,8 @@
-public class Solution {
+package leetcode;
+
+import java.util.Arrays;
+
+public class LC16 {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         

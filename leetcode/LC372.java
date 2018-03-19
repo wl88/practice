@@ -1,4 +1,6 @@
-public class Solution {
+package leetcode;
+
+public class LC372 {
     public int superPow(int a, int[] b) {
         if (isZero(b)) return 1;
         

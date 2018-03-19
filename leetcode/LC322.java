@@ -1,4 +1,6 @@
-public class Solution {
+package leetcode;
+
+public class LC322 {
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
         for (int i = 1; i <= amount; i++) {

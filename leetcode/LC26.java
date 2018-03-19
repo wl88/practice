@@ -1,4 +1,6 @@
-public class Solution {
+package leetcode;
+
+public class LC26 {
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
         

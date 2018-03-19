@@ -1,4 +1,6 @@
-public class Solution {
+package leetcode;
+
+public class LC201 {
     public int rangeBitwiseAnd(int m, int n) {
         if (m == 0) return 0;
         
@@ -8,8 +10,6 @@ public class Solution {
             multiply *= 2;
             digits++;
         }
-        
-        System.out.println(digits);
         
         
         int result = 0;
